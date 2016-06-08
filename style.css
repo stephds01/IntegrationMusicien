@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/* Hierarchie de dossier Smacss
+    1- Base (p, body, h1, h2....)
+    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
+    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
+    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
+    5- Theme (.dark, .light,....) n├®cessaire surtout lors de th├¿me personnalisable avec plusieurs couleurs
+  
+  Hi├®rarchiser un bloc de style
+    .laClass {
+        Box
+        Border
+        Background  
+        text
+        other
+    }*/
+/* Hierarchie de dossier Smacss
+    1- Base (p, body, h1, h2....)
+    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
+    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
+    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
+    5- Theme (.dark, .light,....) necessaire surtout lors de th├¿me personnalisablke avec plusieurs couleurs
+  
+  Hierarchiser un bloc de style
+    .laClass {
+        Box
+        Border
+        Background  
+        text
+        other
+    }*/
+@font-face {
+  font-family: 'Lato';
+  src: url("/font/Lato-Bold.ttf");
+  src: url("/font/Lato-Italic.ttf");
+  src: url("/font/Lato-LightItalic.ttf");
+  src: url("/font/Lato-Regular.ttf"); }
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #F8F9FB;
+  font-family: 'Roboto', sans-serif;
+  color: #032f3e; }
+
+.container-fluid {
+  max-width: 1700px;
+  padding: 0;
+  border: 1px red solid; }
+
+.container {
+  max-width: 1200px;
+  border: 1px green solid; }
+
+h1 {
+  font-size: 40px; }
+
+h2 {
+  font-size: 150%;
+  color: red;
+  padding-left: 15px; }
+
+p, ul, li, td {
+  color: black; }
+
+a:link {
+  color: white;
+  text-decoration: none; }
+
+a:visited {
+  color: gray; }
+
+a:hover {
+  color: #ab987a;
+  text-decoration: none; }
+
+a:active, a:focus {
+  color: #ab987a; }
+
+.icon {
+  color: #032f3e; }
+
+.icon-default {
+  color: #ab987a; }
+
+/* Hierarchie de dossier Smacss
+    1- Base (p, body, h1, h2....)
+    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
+    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
+    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
+    5- Theme (.dark, .light,....) necessaire surtout lors de th├¿me personnalisablke avec plusieurs couleurs
+  
+  Hierargiser un bloc de style
+    .laClass {
+        Box
+        Border
+        Background  
+        text
+        other
+    }*/
+.l-menu {
+  background-color: #032f3e; }
+
+.l-slide {
+  position: relative;
+  height: 864px;
+  background-color: #9e9e9e; }
+
+.l-services {
+  position: relative;
+  height: 864px; }
+
+/* Hierarchie de dossier Smacss
+    1- Base (p, body, h1, h2....)
+    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
+    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
+    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
+    5- Theme (.dark, .light,....) necessaire surtout lors de th├¿me personnalisablke avec plusieurs couleurs
+  
+  Hierargiser un bloc de style
+    .laClass {
+        Box
+        Border
+        Background  
+        text
+        other
+    }*/
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 101px; }
+  .header .header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .header .header-logo img {
+      width: 65px;
+      margin-right: 7px; }
+    .header .header-logo h1 {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      font-style: italic;
+      color: #032f3e; }
+  .header .header-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 67px;
+    padding-left: 0;
+    padding-right: 0; }
+    .header .header-contact p {
+      margin: 0 5px; }
+  .header .header-contact:before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 48px;
+    background-color: #d5d5d5;
+    margin-right: 24px;
+    margin-left: 0; }
+  .header .header-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 67px;
+    color: #032f3e; }
+    .header .header-icon p:first-child {
+      padding-left: 48px; }
+    .header .header-icon p {
+      margin: 0 32px 0 5px; }
+
+.menu {
+  background-color: #032f3e;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase; }
+  .menu .menu-item {
+    text-align: center; }
+    .menu .menu-item a {
+      display: block;
+      height: 100px;
+      padding-top: 10px;
+      border-left: 1px #0d3948 solid;
+      line-height: 5; }
+  .menu .menu-item-first a {
+    border-left: 1px #0d3948 solid; }
+  .menu .menu-item-last a {
+    border-right: 1px #0d3948 solid;
+    border-left: none; }
+  .menu .menu-item-two a {
+    border-left: none; }
+
+/* Hierarchie de dossier Smacss
+    1- Base (p, body, h1, h2....)
+    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
+    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
+    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
+    5- Theme (.dark, .light,....) n├®cessaire surtout lors de th├¿me personnalisable avec plusieurs couleurs
+  
+  Hi├®rarchiser un bloc de style
+    .laClass {
+        Box
+        Border
+        Background  
+        text
+        other
+    }*/
+.slide-button {
+  position: absolute;
+  top: 327px;
+  right: 35px; }
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: #666667; }
+  .slide .slide-test {
+    position: absolute;
+    top: 485px;
+    right: 0; }
+    .slide .slide-test p {
+      color: #eeeeee;
+      font-size: 70px;
+      text-transform: uppercase;
+      line-height: 1; }
+      .slide .slide-test p span {
+        font-family: "Roboto Thin", sans-serif; }
+  .slide .slide-on {
+    position: absolute;
+    top: 660px;
+    right: 0;
+    width: 170px;
+    height: 123px;
+    background-color: #032f3e;
+    text-align: center; }
+    .slide .slide-on img {
+      margin-top: 18%; }
+
+/* Hierarchie de dossier Smacss
+    1- Base (p, body, h1, h2....)
+    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
+    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
+    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
+    5- Theme (.dark, .light,....) necessaire surtout lors de th├¿me personnalisablke avec plusieurs couleurs
+  
+  Hierargiser un bloc de style
+    .laClass {
+        Box
+        Border
+        Background  
+        text
+        other
+    }*/
+.services .services-btn-bg {
+  position: absolute;
+  top: -35px;
+  left: 0; }
+.services .service-icon-bg {
+  position: relative; }
+.services .service-icon {
+  position: absolute;
+  top: 49px;
+  left: 79px; }
+
+/*# sourceMappingURL=style.css.map */

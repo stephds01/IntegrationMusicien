@@ -1,0 +1,152 @@
+/* Hierarchie de dossier Smacss
+    1- Base (p, body, h1, h2....)
+    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
+    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
+    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
+    5- Theme (.dark, .light,....) necessaire surtout lors de thème personnalisablke avec plusieurs couleurs
+  
+  Hierargiser un bloc de style
+    .laClass {
+        Box
+        Border
+        Background  
+        text
+        other
+    }*/
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  height:101px;
+
+
+  .header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      width: 65px;
+      margin-right: 7px;
+    }
+
+    h1 {
+      margin: 0;
+
+      font-family: 'Roboto', sans-serif ;
+      font-weight: bold;
+      font-style: italic;
+      color: #032f3e;
+
+    }
+  }
+  .header-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    //border-left: 1px #ab987a solid;
+
+    height: 67px;
+    padding-left:0;
+    padding-right: 0;
+
+    p {
+      margin: 0 5px;
+
+    }
+
+  }
+
+  .header-contact:before {
+    content:'' ;
+    display:block;
+    width:1px;
+    height:48px;
+    background-color: #d5d5d5;
+    margin-right: 24px;
+    margin-left: 0;
+  }
+
+  .header-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 67px;
+
+    color: #032f3e;
+
+      p:first-child {
+        padding-left: 48px;
+      }
+
+      p {
+        margin: 0 32px 0 5px;
+      }
+  }
+}
+
+.menu {
+  background-color: #032f3e;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  .menu-item {
+
+    text-align: center;
+
+    a {
+      display: block;
+      height: 100px;
+
+      padding-top: 10px;
+
+      border-left: 1px #0d3948 solid;
+
+      line-height: 5;
+
+    }
+
+
+
+  }
+
+  .menu-item-first {
+
+    a {
+      border-left: 1px #0d3948 solid;
+    }
+
+  }
+
+  .menu-item-last {
+
+    a {
+      border-right: 1px #0d3948 solid;
+      border-left: none;
+    }
+
+  }
+
+  .menu-item-two {
+
+    a {
+      border-left: none;
+    }
+
+  }
+
+
+}
+
+        
+      
+    

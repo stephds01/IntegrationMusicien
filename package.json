@@ -1,0 +1,22 @@
+{
+  "name": "integrationmusicien",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephds01/integrationMusicien.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephds01/integrationMusicien/issues"
+  },
+  "homepage": "https://github.com/stephds01/integrationMusicien#readme",
+  "devDependencies": {
+    "live-server": "^1.0.0"
+  }
+}

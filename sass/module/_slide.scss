@@ -1,0 +1,72 @@
+/* Hierarchie de dossier Smacss
+    1- Base (p, body, h1, h2....)
+    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
+    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
+    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
+    5- Theme (.dark, .light,....) nécessaire surtout lors de thème personnalisable avec plusieurs couleurs
+  
+  Hiérarchiser un bloc de style
+    .laClass {
+        Box
+        Border
+        Background  
+        text
+        other
+    }*/
+
+
+
+.slide-button {
+  position: absolute;
+  top: 327px;
+  right: 35px;
+}
+
+.slide {
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  box-shadow: #666667;
+
+
+
+
+  .slide-test {
+    position: absolute;
+    top: 485px;
+    right: 0;
+
+      p {
+        color: #eeeeee;
+        font-size: 70px;
+        text-transform: uppercase;
+        line-height: 1;
+
+          span {
+            font-family: "Roboto Thin", sans-serif;
+          }
+
+      }
+  }
+
+  .slide-on {
+    position: absolute;
+    top: 660px;
+    right: 0;
+
+    width: 170px;
+    height: 123px;
+    background-color: #032f3e;
+
+    text-align: center;
+      img {
+        margin-top: 18%;
+      }
+  }
+
+
+}
+        
+      
+    
