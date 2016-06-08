@@ -3,7 +3,7 @@
     2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
     3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
     4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
-    5- Theme (.dark, .light,....) necessaire surtout lors de thème personnalisablke avec plusieurs couleurs
+    5- Theme (.dark, .light,....) nécessaire surtout lors de thème personnalisable avec plusieurs couleurs
   
   Hierargiser un bloc de style
     .laClass {
@@ -17,21 +17,64 @@
 
 .services {
 
-  .services-btn-bg {
-    position: absolute;
-    top: -35px;
-    left:0;
-  }
 
-  .service-icon-bg {
-    position: relative;
-  }
+  margin-top: 128px;
+  text-align: center;
 
-  .service-icon {
-    position: absolute;
-    top: 49px;
-    left: 79px;
-  }
+      h2 {
+        font-weight: bold;
+        font-size: 24px;
+        text-transform: uppercase;
+
+      }
+
+      p {
+            font-family: 'Lato Light', sans-serif;
+            font-size: 16px;
+            line-height: 1.68;
+          }
+
+          .services-btn-bg {
+            position: absolute;
+            top: -35px;
+            left:0;
+          }
+
+          .services-chevron {
+            position: absolute;
+            top: 11px;
+            left: 134px;
+            color: #AB987A;
+          }
+
+          .service-icon-bg {
+            position: relative;
+            margin-bottom: 22px;
+          }
+
+          .service-icon {
+            position: absolute;
+            top: 49px;
+            left: 79px;
+          }
+      .services-box {
+        margin-top: 139px;
+        margin-bottom: 181px;
+
+          p {
+            font-family: 'Roboto Bold', sans-serif;
+            font-size: 18px;
+            line-height: 1.41;
+            font-weight: bold;
+          }
+
+          p:after {
+            content: "";
+            width: 15px;
+            height: 5px;
+            color: #000;
+          }
+      }
 
 }
 

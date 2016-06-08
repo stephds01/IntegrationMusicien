@@ -3,9 +3,9 @@
     2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
     3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
     4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
-    5- Theme (.dark, .light,....) necessaire surtout lors de thème personnalisablke avec plusieurs couleurs
+    5- Theme (.dark, .light,....) nécessaire surtout lors de thème personnalisable avec plusieurs couleurs
   
-  Hierarchiser un bloc de style
+  Hiérarchiser un bloc de style
     .laClass {
         Box
         Border
@@ -51,7 +51,12 @@ h1 {
 }
 h2 {
   font-size: 150%;
-  color: red;
+  color: #032f3e;
+  padding-left: 15px;
+}
+h2 {
+  font-size: 150%;
+  color: #eee;
   padding-left: 15px;
 }
 p,ul,li,td {
