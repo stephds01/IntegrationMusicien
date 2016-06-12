@@ -15,5 +15,46 @@
     }*/
 
 .lessons {
-  color: #eee;
+
+  h3 {
+    margin-top: 122px;
+    margin-bottom: 84px;
+    font-family:'Roboto',sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    line-height: 1.4;
+
+      span {
+        font-family:'Roboto Thin',sans-serif;
+      }
+  }
+
+
+
+    .lessons-text {
+
+      p {
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+
+    .lessons-pipe:after {
+      content: '';
+      display: block;
+      height: 58px;
+      width: 2px;
+      //margin-left:34%;
+      background-color: #AB987A;
+      margin: 24px 34%;
+
+    }
+
+    .lessons-linetime {
+      margin-bottom: 120px;
+    }
+
+
+
 }
+

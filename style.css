@@ -57,11 +57,22 @@ h1 {
   font-size: 40px; }
 
 h2 {
-  font-size: 150%;
-  color: #032f3e;
-  padding-left: 15px; }
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 152px; }
+  h2:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #AB987A;
+    margin-top: 34px;
+    text-align: center;
+    margin-left: 49%; }
 
-h2 {
+h3 {
   font-size: 150%;
   color: #eee;
   padding-left: 15px; }
@@ -89,6 +100,14 @@ a:active, a:focus {
 .icon-default {
   color: #ab987a; }
 
+/**** Button***/
+.btn-action {
+  width: 270px;
+  height: 64px;
+  background-color: #032f3f;
+  color: #eee;
+  text-transform: uppercase; }
+
 /* Hierarchie de dossier Smacss
     1- Base (p, body, h1, h2....)
     2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
@@ -113,12 +132,16 @@ a:active, a:focus {
   background-color: #9e9e9e; }
 
 .l-services {
-  position: relative;
-  height: 864px; }
+  position: relative; }
 
 .l-lessons {
-  height: 975px;
   background-color: #032f3e; }
+
+.l-projects-header, .l-projects-footer {
+  background-color: #f8f9fb; }
+
+.l-projects-content {
+  background-color: #ffffff; }
 
 /* Hierarchie de dossier Smacss
     1- Base (p, body, h1, h2....)
@@ -269,16 +292,13 @@ a:active, a:focus {
         other
     }*/
 .services {
-  margin-top: 128px;
   text-align: center; }
-  .services h2 {
-    font-weight: bold;
-    font-size: 24px;
-    text-transform: uppercase; }
   .services p {
+    margin-top: 31px;
     font-family: 'Lato Light', sans-serif;
     font-size: 16px;
-    line-height: 1.68; }
+    line-height: 1.68;
+    text-transform: upper; }
   .services .services-btn-bg {
     position: absolute;
     top: -35px;
@@ -304,10 +324,14 @@ a:active, a:focus {
       line-height: 1.41;
       font-weight: bold; }
     .services .services-box p:after {
-      content: "";
-      width: 15px;
-      height: 5px;
-      color: #000; }
+      content: '';
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: #AB987A;
+      margin-top: 27px;
+      text-align: center;
+      margin-left: 49%; }
 
 /* Hierarchie de dossier Smacss
     1- Base (p, body, h1, h2....)
@@ -324,7 +348,123 @@ a:active, a:focus {
         text
         other
     }*/
-.lessons {
-  color: #eee; }
+.lessons h3 {
+  margin-top: 122px;
+  margin-bottom: 84px;
+  font-family: 'Roboto',sans-serif;
+  font-size: 70px;
+  text-transform: uppercase;
+  line-height: 1.4; }
+  .lessons h3 span {
+    font-family: 'Roboto Thin',sans-serif; }
+.lessons .lessons-text p {
+  color: white;
+  text-transform: uppercase; }
+.lessons .lessons-pipe:after {
+  content: '';
+  display: block;
+  height: 58px;
+  width: 2px;
+  background-color: #AB987A;
+  margin: 24px 34%; }
+.lessons .lessons-linetime {
+  margin-bottom: 120px; }
+
+/* Hierarchie de dossier Smacss
+    1- Base (p, body, h1, h2....)
+    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
+    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
+    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
+    5- Theme (.dark, .light,....) n├®cessaire surtout lors de th├¿me personnalisable avec plusieurs couleurs
+  
+  Hierargiser un bloc de style
+    .laClass {
+        Box
+        Border
+        Background  
+        text
+        other
+    }*/
+.projects p {
+  text-align: center;
+  font-family: 'Lato Light', sans-serif;
+  font-size: 16px;
+  line-height: 1.62; }
+.projects .projects-header {
+  margin-bottom: 145px; }
+.projects .project-right {
+  margin-top: 71px; }
+  .projects .project-right span {
+    padding-left: 10px; }
+  .projects .project-right .project-right-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 21px; }
+    .projects .project-right .project-right-header p {
+      margin: 0;
+      padding: 0; }
+    .projects .project-right .project-right-header .projects-cat {
+      font-family: 'Lato Light',sans-serif;
+      font-size: 16px;
+      color: #AB987A;
+      text-transform: uppercase; }
+    .projects .project-right .project-right-header .projects-date {
+      color: #b5b5b5; }
+  .projects .project-right h4 {
+    text-transform: uppercase;
+    margin-bottom: 37px; }
+    .projects .project-right h4:after {
+      content: '';
+      display: block;
+      width: 31px;
+      height: 2px;
+      background-color: #AB987A;
+      margin-top: 30px;
+      margin-bottom: 38px; }
+  .projects .project-right p {
+    font-family: 'Lato Light',sans-serif;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: justify;
+    margin-bottom: 43px; }
+  .projects .project-right .project-button-action {
+    margin-bottom: 80px; }
+  .projects .project-right .project-social p {
+    color: #b5b5b5;
+    text-transform: uppercase; }
+    .projects .project-right .project-social p i {
+      padding-left: 30px; }
+.projects .projects-playing .projects-playing-btn-left {
+  text-align: left; }
+.projects .projects-playing .projects-playing-btn-right {
+  text-align: right; }
+.projects .projects-playing i {
+  color: #dadcdc; }
+.projects .projects-playing .projects-playing-button {
+  display: inline-flex;
+  justify-content: center; }
+  .projects .projects-playing .projects-playing-button p {
+    margin-right: 5px; }
+.projects .project-footer {
+  margin-top: 151px;
+  margin-bottom: 60px; }
+  .projects .project-footer .project-footer-left, .projects .project-footer .project-footer-middle, .projects .project-footer .project-footer-right {
+    position: relative;
+    background-color: #9e9e9e; }
+  .projects .project-footer .project-footer-middle:first-child {
+    margin-bottom: 29px; }
+  .projects .project-footer .project-footer-icon-folder {
+    position: absolute;
+    top: 20px;
+    left: 20px; }
+    .projects .project-footer .project-footer-icon-folder p {
+      color: #eee;
+      text-transform: uppercase;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px; }
+  .projects .project-footer .project-pagination .button-pagination {
+    width: 70px;
+    height: 61px; }
 
 /*# sourceMappingURL=style.css.map */

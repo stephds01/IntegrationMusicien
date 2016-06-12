@@ -28,15 +28,21 @@
 
 .l-services {
   position: relative;
-  height: 864px;
+  //height: 864px;
 }
 
 .l-lessons {
-  height: 975px;
+  //height: 975px;
   background-color: #032f3e;
 
 }
+
+.l-projects-header, .l-projects-footer {
+  background-color: #f8f9fb;
+}
     
-        
+ .l-projects-content {
+   background-color: #ffffff;
+ }
       
     
