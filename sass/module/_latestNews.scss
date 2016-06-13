@@ -1,0 +1,95 @@
+/* Hierarchie de dossier Smacss
+    1- Base (p, body, h1, h2....)
+    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
+    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
+    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
+    5- Theme (.dark, .light,....) nécessaire surtout lors de thème personnalisable avec plusieurs couleurs
+  
+  Hierargiser un bloc de style
+    .laClass {
+        Box
+        Border
+        Background  
+        text
+        other
+    }*/
+.latestNews-button {
+  position: absolute;
+  top: 450px;
+  right: 180px;
+}
+
+.latestNews {
+
+
+
+  .latestNews-header {
+    p {
+      text-align: center;
+      font-family: 'Lato Light', sans-serif;
+      font-size: 16px;
+      color: #616161;
+    }
+  }
+
+  .latestNews-col-left {
+
+      .article1 {
+        position: relative;
+        background-color: #9d9d9e;
+      }
+
+      .action-comment {
+        position: absolute;
+        top: 0;
+        right: 0;
+          .interaction {
+            width: 60px;
+            height: 64px;
+            text-align: center;
+
+              p{
+                color: #eee;
+                line-height: 1.45;
+                font-size: 14px;
+
+              }
+
+          }
+        .comments {
+          background-color: #aa977a;
+          padding-top: 5px;
+        }
+        .calendar {
+          background-color: #032f3f;
+          padding-top: 5px;
+        }
+
+
+      }
+
+      .latestNews-article2 {
+        .col-md-12 {
+          padding: 0;
+        }
+        .lien {
+          color: #aa977a;
+          font-family: 'Roboto', sans-serif;
+          font-size:14px;
+          text-transform: uppercase;
+        }
+        .last {
+          color: #032f3f;
+
+        }
+
+        .article2-footer {
+          display: flex;
+          flex-direction: row;
+
+          justify-content: space-between;
+        }
+      }
+  }
+
+}

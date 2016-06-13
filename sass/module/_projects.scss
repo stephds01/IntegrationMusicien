@@ -64,21 +64,6 @@
 
         }
 
-        h4 {
-          text-transform: uppercase;
-          margin-bottom: 37px;
-
-          &:after {
-            content: '';
-            display: block;
-            width: 31px;
-            height: 2px;
-            background-color: #AB987A;
-            margin-top: 30px;
-            margin-bottom: 38px;
-
-          }
-        }
         p {
           font-family: 'Lato Light',sans-serif;
           font-size: 16px;
@@ -161,13 +146,23 @@
             }
         }
 
-        .project-pagination {
-
-          .button-pagination {
-            width: 70px;
-            height: 61px;
-          }
-        }
     }
+    .project-pagination {
+      margin-bottom: 164px;
+
+      .button-pagination {
+        width: 70px;
+        height: 61px;
+        background-color: #eee;
+
+        border: 2px #aa977a solid;
+        color: #aa977a;
+      }
+      .active {
+        color: #eee;
+        background-color: #aa977a;
+      }
+    }
+
 
 }
