@@ -38,12 +38,12 @@ body {
 .container-fluid {
   max-width: 1700px;
   padding: 0;
-  border: 1px red solid;
+  //border: 1px red solid;
 }
 
 .container {
   max-width: 1200px;
-  border: 1px green solid;
+  //border: 1px green solid;
 
 }
 h1 {
@@ -102,6 +102,15 @@ h5 {
     margin-bottom: 38px;
 
   }
+}
+
+h6 {
+  font-family: 'Roboto Bold',sans-serif;
+  font-size: 18px;
+
+  margin-left: 160px;
+
+  text-transform: uppercase;
 }
 
 p {

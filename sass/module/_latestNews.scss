@@ -17,6 +17,10 @@
   position: absolute;
   top: 450px;
   right: 180px;
+
+  p {
+    color: #d8dadb;
+  }
 }
 
 .latestNews {
@@ -31,7 +35,7 @@
       color: #616161;
     }
   }
-
+  
   .latestNews-col-left {
 
       .article1 {
@@ -52,6 +56,8 @@
                 color: #eee;
                 line-height: 1.45;
                 font-size: 14px;
+                margin: 0 0 2px;
+
 
               }
 
@@ -69,6 +75,9 @@
       }
 
       .latestNews-article2 {
+
+        background-color: white;
+        box-shadow: 1.1px 2px 1.9px #d6d4d4;
         .col-md-12 {
           padding: 0;
         }
@@ -91,5 +100,97 @@
         }
       }
   }
+
+  .latestNews-col-right {
+
+    .latestNews-box {
+
+        position: relative;
+        height: 125px;
+        margin-bottom: 21px;
+
+
+      background-color: white;
+        box-shadow: 1.1px 2px 1.9px #d6d4d4;
+
+      .latestNews-box-content {
+        width: 91%;
+
+        p {
+          margin-left:160px;
+          margin-top: 39px;
+
+          color: #aa977a;
+          font-family: 'Roboto', sans-serif;
+          font-size:14px;
+          text-transform: uppercase;
+
+        }
+
+      }
+
+      .action-comment1 {
+          position: absolute;
+          top: 0;
+          right: 0;
+          .interaction1 {
+            width: 60px;
+            height: 62px;
+            text-align: center;
+
+            p{
+              color: #eee;
+              margin: 0 0 2px;
+              //line-height: 1.45;
+              font-size: 14px;
+
+            }
+
+          }
+          .comments1 {
+            background-color: #aa977a;
+            padding-top: 5px;
+          }
+          .calendar1 {
+            background-color: #032f3f;
+            padding-top: 5px;
+          }
+
+
+        }
+
+      }
+      .latestNews-box-last {
+        background-color: #032f3f;
+        color: white;
+
+      }
+
+    .latestNews-img {
+        position: absolute;
+        top:0;
+        left: 0;
+        background-color: #9d9d9e;
+      }
+  }
+
+  .latestNews-btn-action {
+    text-align: center;;
+     button {
+       width: 268px;
+       height: 63px;
+       background-color: #f6f7fa;
+       border:2px #aa977a solid;
+       color: #aa977a;
+       margin-top:55px;
+       margin-bottom:150px;
+
+
+       text-transform: uppercase;
+     }
+    
+  }
+
+
 
 }

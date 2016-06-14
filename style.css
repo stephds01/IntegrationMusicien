@@ -46,12 +46,10 @@ body {
 
 .container-fluid {
   max-width: 1700px;
-  padding: 0;
-  border: 1px red solid; }
+  padding: 0; }
 
 .container {
-  max-width: 1200px;
-  border: 1px green solid; }
+  max-width: 1200px; }
 
 h1 {
   font-size: 40px; }
@@ -101,6 +99,12 @@ h5 {
     background-color: #AB987A;
     margin-top: 30px;
     margin-bottom: 38px; }
+
+h6 {
+  font-family: 'Roboto Bold',sans-serif;
+  font-size: 18px;
+  margin-left: 160px;
+  text-transform: uppercase; }
 
 p {
   color: #616161;
@@ -180,6 +184,12 @@ a:active, a:focus {
 .l-latestNews {
   position: relative;
   background-color: #f8f9fb; }
+
+.l-testimonials {
+  position: relative;
+  background-image: url("img/pattern.png");
+  padding-bottom: 119px;
+  border-bottom: 5px #aa977a solid; }
 
 /* Hierarchie de dossier Smacss
     1- Base (p, body, h1, h2....)
@@ -557,6 +567,8 @@ a:active, a:focus {
   position: absolute;
   top: 450px;
   right: 180px; }
+  .latestNews-button p {
+    color: #d8dadb; }
 
 .latestNews .latestNews-header p {
   text-align: center;
@@ -577,25 +589,127 @@ a:active, a:focus {
     .latestNews .latestNews-col-left .action-comment .interaction p {
       color: #eee;
       line-height: 1.45;
-      font-size: 14px; }
+      font-size: 14px;
+      margin: 0 0 2px; }
   .latestNews .latestNews-col-left .action-comment .comments {
     background-color: #aa977a;
     padding-top: 5px; }
   .latestNews .latestNews-col-left .action-comment .calendar {
     background-color: #032f3f;
     padding-top: 5px; }
-.latestNews .latestNews-col-left .latestNews-article2 .col-md-12 {
-  padding: 0; }
-.latestNews .latestNews-col-left .latestNews-article2 .lien {
+.latestNews .latestNews-col-left .latestNews-article2 {
+  background-color: white;
+  box-shadow: 1.1px 2px 1.9px #d6d4d4; }
+  .latestNews .latestNews-col-left .latestNews-article2 .col-md-12 {
+    padding: 0; }
+  .latestNews .latestNews-col-left .latestNews-article2 .lien {
+    color: #aa977a;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase; }
+  .latestNews .latestNews-col-left .latestNews-article2 .last {
+    color: #032f3f; }
+  .latestNews .latestNews-col-left .latestNews-article2 .article2-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+.latestNews .latestNews-col-right .latestNews-box {
+  position: relative;
+  height: 125px;
+  margin-bottom: 21px;
+  background-color: white;
+  box-shadow: 1.1px 2px 1.9px #d6d4d4; }
+  .latestNews .latestNews-col-right .latestNews-box .latestNews-box-content {
+    width: 91%; }
+    .latestNews .latestNews-col-right .latestNews-box .latestNews-box-content p {
+      margin-left: 160px;
+      margin-top: 39px;
+      color: #aa977a;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      text-transform: uppercase; }
+  .latestNews .latestNews-col-right .latestNews-box .action-comment1 {
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .latestNews .latestNews-col-right .latestNews-box .action-comment1 .interaction1 {
+      width: 60px;
+      height: 62px;
+      text-align: center; }
+      .latestNews .latestNews-col-right .latestNews-box .action-comment1 .interaction1 p {
+        color: #eee;
+        margin: 0 0 2px;
+        font-size: 14px; }
+    .latestNews .latestNews-col-right .latestNews-box .action-comment1 .comments1 {
+      background-color: #aa977a;
+      padding-top: 5px; }
+    .latestNews .latestNews-col-right .latestNews-box .action-comment1 .calendar1 {
+      background-color: #032f3f;
+      padding-top: 5px; }
+.latestNews .latestNews-col-right .latestNews-box-last {
+  background-color: #032f3f;
+  color: white; }
+.latestNews .latestNews-col-right .latestNews-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #9d9d9e; }
+.latestNews .latestNews-btn-action {
+  text-align: center; }
+  .latestNews .latestNews-btn-action button {
+    width: 268px;
+    height: 63px;
+    background-color: #f6f7fa;
+    border: 2px #aa977a solid;
+    color: #aa977a;
+    margin-top: 55px;
+    margin-bottom: 150px;
+    text-transform: uppercase; }
+
+/* Hierarchie de dossier Smacss
+    1- Base (p, body, h1, h2....)
+    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
+    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
+    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
+    5- Theme (.dark, .light,....) n├®cessaire surtout lors de th├¿me personnalisable avec plusieurs couleurs
+  
+  Hierargiser un bloc de style
+    .laClass {
+        Box
+        Border
+        Background  
+        text
+        other
+    }*/
+.testimonials .testimonials-content p {
+  text-align: center; }
+.testimonials .testimonials-content .testimonials-btn button {
+  width: 62px;
+  height: 70px;
+  margin-top: 155%;
   color: #aa977a;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  text-transform: uppercase; }
-.latestNews .latestNews-col-left .latestNews-article2 .last {
-  color: #032f3f; }
-.latestNews .latestNews-col-left .latestNews-article2 .article2-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
+  border: 3px #aa977a solid;
+  background-color: transparent; }
+.testimonials .testimonials-content .testimonials-avatar {
+  text-align: center; }
+.testimonials .testimonials-content .author {
+  font-family: 'Roboto Bold',sans-serif;
+  font-size: 24px;
+  color: #032f3e;
+  text-transform: capitalize; }
+.testimonials .testimonials-content .category {
+  font-family: 'Roboto Light',sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #aa977a; }
+.testimonials .testimonials-content .testimonials-btn-bg {
+  position: absolute;
+  bottom: -124px;
+  left: 0; }
+  .testimonials .testimonials-content .testimonials-btn-bg .testimonials-map {
+    position: absolute;
+    top: 5px;
+    left: 101px;
+    color: #eee; }
 
 /*# sourceMappingURL=style.css.map */
