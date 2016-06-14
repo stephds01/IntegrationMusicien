@@ -46,10 +46,12 @@ body {
 
 .container-fluid {
   max-width: 1700px;
-  padding: 0; }
+  padding: 0;
+  border: 1px red solid; }
 
 .container {
-  max-width: 1200px; }
+  max-width: 1200px;
+  border: 1px green solid; }
 
 h1 {
   font-size: 40px; }
@@ -190,6 +192,10 @@ a:active, a:focus {
   background-image: url("img/pattern.png");
   padding-bottom: 119px;
   border-bottom: 5px #aa977a solid; }
+
+.l-map {
+  position: relative;
+  background-color: #9d9d9e; }
 
 /* Hierarchie de dossier Smacss
     1- Base (p, body, h1, h2....)
@@ -704,12 +710,66 @@ a:active, a:focus {
   color: #aa977a; }
 .testimonials .testimonials-content .testimonials-btn-bg {
   position: absolute;
-  bottom: -124px;
+  bottom: -125px;
   left: 0; }
   .testimonials .testimonials-content .testimonials-btn-bg .testimonials-map {
     position: absolute;
     top: 5px;
     left: 101px;
     color: #eee; }
+
+/* Hierarchie de dossier Smacss
+    1- Base (p, body, h1, h2....)
+    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
+    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
+    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
+    5- Theme (.dark, .light,....) n├®cessaire surtout lors de th├¿me personnalisable avec plusieurs couleurs
+  
+  Hierargiser un bloc de style
+    .laClass {
+        Box
+        Border
+        Background  
+        text
+        other
+    }*/
+.map .map-modal {
+  position: absolute;
+  top: 163px;
+  right: 557px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 372px;
+  height: 110px;
+  background-color: #fff;
+  color: #254b58;
+  box-shadow: 1.1px 2px 1.9px #d6d4d4; }
+  .map .map-modal:after {
+    content: '\25BC';
+    display: block;
+    font-size: 100px;
+    color: #fdfdfe;
+    position: absolute;
+    bottom: -103px;
+    left: 36%;
+    text-shadow: 1.1px 2px 1.9px #d6d4d4; }
+  .map .map-modal .map-logo {
+    width: 20%; }
+  .map .map-modal .map-content {
+    width: 70%; }
+    .map .map-modal .map-content h6 {
+      font-family: 'Lato Bold', sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-align: left;
+      margin: 0; }
+  .map .map-modal .map-close {
+    padding-top: 5px;
+    margin-right: -10px;
+    align-self: flex-start;
+    color: #b4b4b5; }
 
 /*# sourceMappingURL=style.css.map */
