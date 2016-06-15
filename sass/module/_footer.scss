@@ -1,0 +1,83 @@
+/* Hierarchie de dossier Smacss
+    1- Base (p, body, h1, h2....)
+    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
+    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
+    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
+    5- Theme (.dark, .light,....) nécessaire surtout lors de thème personnalisable avec plusieurs couleurs
+  
+  Hierargiser un bloc de style
+    .laClass {
+        Box
+        Border
+        Background  
+        text
+        other
+    }*/
+.footer {
+  margin-top: 103px;
+  margin-bottom: 65px;
+  .footer-box {
+    color: #f8f9fa;
+
+    p, ul, li {
+      font-family: 'Lato',sans-serif;
+      color: #f8f9fa;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-about {
+     }
+    h4 {
+      font-family: 'Roboto bold',sans-serif;
+    }
+    p {
+      margin-top: 25px;
+    }
+
+
+
+  }
+  .footer-contact {
+    li {
+      padding-bottom: 27px;
+
+        i {
+          margin-right: 10px;
+          color: #aa977a;
+        }
+    }
+  }
+
+  .footer-contact, .footer-news {
+    color: #f8f9fa;
+
+     h4{
+      margin-bottom: 0;
+
+      &:after {
+        margin-top: 20px;
+        margin-bottom: 31px;
+      }
+    }
+
+  }
+
+  .footer-news {
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-date {
+      color: #a9967a;
+    }
+    .footer-title {
+      font-family: 'Roboto Bold',sans-serif;
+    }
+  }
+}

@@ -5,7 +5,7 @@
     4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
     5- Theme (.dark, .light,....) nécessaire surtout lors de thème personnalisable avec plusieurs couleurs
   
-  Hiérarchiser un bloc de style
+  Hierargiser un bloc de style
     .laClass {
         Box
         Border
@@ -13,23 +13,24 @@
         text
         other
     }*/
-@import "sass/base/base";
+
+.copyright {
+
+  p {
+    padding:0;
+    margin: 10px;
+    font-family:'Roboto Light', sans-serif;
+    color: #5f737a;
 
 
-@import "sass/layout/layout";
+  }
+  .copyright-reseau {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
-
-@import "sass/module/header";
-@import "sass/module/slide";
-@import "sass/module/services";
-@import "sass/module/lessons";
-@import "sass/module/projects";
-@import "sass/module/skype";
-@import "sass/module/latestNews";
-@import "sass/module/testimonials";
-@import "sass/module/map";
-@import "sass/module/footer";
-@import "sass/module/copyright";
-
-      
-    
+    p {
+      width: 15px;
+    }
+  }
+}
