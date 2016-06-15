@@ -26,41 +26,60 @@
             font-family: 'Lato Light', sans-serif;
             font-size: 16px;
             line-height: 1.68;
-            text-transform: upper;
+            text-transform: uppercase;
           }
 
           .services-btn-bg {
             position: absolute;
             top: -35px;
             left:0;
+
           }
 
           .services-chevron {
             position: absolute;
-            top: 11px;
-            left: 134px;
+            bottom: 0;
+            left: 0;
+            width: 186px;
+
             color: #AB987A;
           }
 
-          .service-icon-bg {
-            position: relative;
-            margin-bottom: 22px;
-          }
-
-          .service-icon {
-            position: absolute;
-            top: 49px;
-            left: 79px;
-          }
       .services-box {
         margin-top: 139px;
         margin-bottom: 181px;
 
+        .services-box-img {
+          position: relative;
+          width: 100%;
+
+
+              .service-icon-bg {
+                position: relative;
+                margin-bottom: 22px;
+                width: 100%;
+              }
+
+              .service-icon {
+                position: absolute;
+                top: 30px;
+                left: 40px;
+              }
+              .service-icon-other {
+                position: absolute;
+                top: 27px;
+                left: 32px;
+              }
+
+        }
+
           p {
             font-family: 'Roboto Bold', sans-serif;
-            font-size: 18px;
+            font-size: 1em;
             line-height: 1.41;
             font-weight: bold;
+            text-align: center;
+            text-align: -webkit-center;
           }
 
           p:after {
@@ -70,8 +89,7 @@
             height: 2px;
             background-color: #AB987A;
             margin-top: 27px;
-            text-align: center;
-            margin-left: 49%;
+            //margin-left: 49%;
 
           }
       }

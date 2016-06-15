@@ -46,12 +46,10 @@ body {
 
 .container-fluid {
   max-width: 1700px;
-  padding: 0;
-  border: 1px red solid; }
+  padding: 0; }
 
 .container {
-  max-width: 1200px;
-  border: 1px green solid; }
+  max-width: 1200px; }
 
 h1 {
   font-size: 40px; }
@@ -104,7 +102,7 @@ h5 {
 
 h6 {
   font-family: 'Roboto Bold',sans-serif;
-  font-size: 18px;
+  font-size: 1em;
   margin-left: 160px;
   text-transform: uppercase; }
 
@@ -358,40 +356,49 @@ a:active, a:focus {
     font-family: 'Lato Light', sans-serif;
     font-size: 16px;
     line-height: 1.68;
-    text-transform: upper; }
+    text-transform: uppercase; }
   .services .services-btn-bg {
     position: absolute;
     top: -35px;
     left: 0; }
   .services .services-chevron {
     position: absolute;
-    top: 11px;
-    left: 134px;
+    bottom: 0;
+    left: 0;
+    width: 186px;
     color: #AB987A; }
-  .services .service-icon-bg {
-    position: relative;
-    margin-bottom: 22px; }
-  .services .service-icon {
-    position: absolute;
-    top: 49px;
-    left: 79px; }
   .services .services-box {
     margin-top: 139px;
     margin-bottom: 181px; }
+    .services .services-box .services-box-img {
+      position: relative;
+      width: 100%; }
+      .services .services-box .services-box-img .service-icon-bg {
+        position: relative;
+        margin-bottom: 22px;
+        width: 100%; }
+      .services .services-box .services-box-img .service-icon {
+        position: absolute;
+        top: 30px;
+        left: 40px; }
+      .services .services-box .services-box-img .service-icon-other {
+        position: absolute;
+        top: 27px;
+        left: 32px; }
     .services .services-box p {
       font-family: 'Roboto Bold', sans-serif;
-      font-size: 18px;
+      font-size: 1em;
       line-height: 1.41;
-      font-weight: bold; }
+      font-weight: bold;
+      text-align: center;
+      text-align: -webkit-center; }
     .services .services-box p:after {
       content: '';
       display: block;
       width: 30px;
       height: 2px;
       background-color: #AB987A;
-      margin-top: 27px;
-      text-align: center;
-      margin-left: 49%; }
+      margin-top: 27px; }
 
 /* Hierarchie de dossier Smacss
     1- Base (p, body, h1, h2....)
@@ -844,6 +851,10 @@ a:active, a:focus {
         text
         other
     }*/
+.copyright div {
+  vertical-align: middle;
+  margin-top: 30px;
+  margin-bottom: 30px; }
 .copyright p {
   padding: 0;
   margin: 10px;
