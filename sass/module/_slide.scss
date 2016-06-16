@@ -13,9 +13,12 @@
   left: 0;
   right: 0;
 
-    .slide-box-shadow {
-      box-shadow: 10px 32px 10px #666667;
-    }
+    //.slide-box-shadow {
+    //  box-shadow: 10px 32px 10px #666667;
+    //  @include box-shadow(0 25px 20px orange);
+    //
+    //  color: #eee;
+    //}
   //
   //-moz-box-shadow: 0px 20px 20px 40px #656565;
   //-webkit-box-shadow: 0px 20px 20px 40px #656565;

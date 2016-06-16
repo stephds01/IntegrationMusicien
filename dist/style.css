@@ -173,13 +173,19 @@ a:active, a:focus {
 
 /*  Section Header  */
 .header {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-align: center;
   align-items: center;
   height: 101px; }
   .header .header-logo {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-align: center;
     align-items: center; }
     .header .header-logo img {
       width: 65px;
@@ -191,9 +197,13 @@ a:active, a:focus {
       font-style: italic;
       color: #032f3e; }
   .header .header-contact {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 67px;
     padding-left: 0;
@@ -209,9 +219,13 @@ a:active, a:focus {
     margin-right: 24px;
     margin-left: 0; }
   .header .header-icon {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 67px;
     color: #032f3e; }
@@ -252,6 +266,8 @@ a:active, a:focus {
   top: 0;
   left: 0;
   right: 0; }
+  .slide .slide-box-shadow {
+    box-shadow: 10px 32px 10px #666667; }
   .slide .slide-test {
     position: absolute;
     top: 485px;
@@ -365,8 +381,11 @@ a:active, a:focus {
   .projects .project-right span {
     padding-left: 10px; }
   .projects .project-right .project-right-header {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 21px; }
     .projects .project-right .project-right-header p {
@@ -401,7 +420,9 @@ a:active, a:focus {
   .projects .projects-playing i {
     color: #dadcdc; }
   .projects .projects-playing .projects-playing-button {
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -ms-flex-pack: center;
     justify-content: center; }
     .projects .projects-playing .projects-playing-button p {
       margin-right: 5px; }
@@ -504,8 +525,11 @@ a:active, a:focus {
   .latestNews .latestNews-col-left .latestNews-article2 .last {
     color: #032f3f; }
   .latestNews .latestNews-col-left .latestNews-article2 .article2-footer {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: justify;
     justify-content: space-between; }
 .latestNews .latestNews-col-right .latestNews-box {
   position: relative;
@@ -597,9 +621,13 @@ a:active, a:focus {
   position: absolute;
   top: 163px;
   right: 557px;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 372px;
   height: 110px;
@@ -629,6 +657,7 @@ a:active, a:focus {
   .map .map-modal .map-close {
     padding-top: 5px;
     margin-right: -10px;
+    -ms-flex-item-align: start;
     align-self: flex-start;
     color: #b4b4b5; }
 
@@ -680,8 +709,11 @@ a:active, a:focus {
   font-family: 'Roboto Light', sans-serif;
   color: #5f737a; }
 .copyright .copyright-reseau {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-pack: center;
   justify-content: center; }
   .copyright .copyright-reseau p {
     width: 15px; }
@@ -711,10 +743,13 @@ a:active, a:focus {
     background-color: #032f3e !important;
     border-color: #032f3e !important; }
   .menu .navbar-header {
+    background-color: #f8f9fb;
     border-color: #f8f9fb; }
 
   .services .services-box {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
     text-align: center;
     margin-top: 50px;
@@ -764,5 +799,3 @@ a:active, a:focus {
 
   .copyright .copyright-text {
     font-size: 10px; } }
-
-/*# sourceMappingURL=style.css.map */
