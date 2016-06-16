@@ -1,8 +1,7 @@
 
 /*  Responsive Tablette */
 
-@media screen and (max-width:991px){
-
+@media screen and (max-width:991px) {
 
   .container-fluid {
     width: 100%;
@@ -16,15 +15,45 @@
 
   }
 
-  .not_tablet { display: none; }
-
-
+  .not_tablet {
+    display: none;
+  }
 
   .header {
 
-    .not_tablet { display: none; }
+    .not_tablet {
+      display: none;
+    }
+
+  }
+  .menu {
+    .menu-item {
 
 
+      a {
+
+        border-bottom: 1px #0d3948 solid;
+        border-left: none;
+        border-right: none;
+
+      }
+
+
+
+    }
+    .menu-item-first {
+      border-left: none;
+    }
+
+    .navbar .navbar-default {
+      background-color: #032f3e !important;
+      border-color: #032f3e !important;
+    }
+
+    .navbar-header {
+      background-color: #f8f9fb;
+      border-color: #f8f9fb;;
+    }
   }
 
   .services {

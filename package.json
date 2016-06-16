@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/stephds01/integrationMusicien#readme",
   "devDependencies": {
+    "compass": "^0.1.1",
     "live-server": "^1.0.0"
   }
 }
