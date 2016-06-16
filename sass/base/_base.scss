@@ -1,18 +1,22 @@
-/* Hierarchie de dossier Smacss
-    1- Base (p, body, h1, h2....)
-    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
-    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
-    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
-    5- Theme (.dark, .light,....) nécessaire surtout lors de thème personnalisable avec plusieurs couleurs
-  
-  Hiérarchiser un bloc de style
-    .laClass {
-        Box
-        Border
-        Background  
-        text
-        other
-    }*/
+/*  Base  */
+
+@media (min-width: 7668px) and (max-width: 991px) {
+  .container-fluid {
+    width: 100%;
+    padding: 0;
+    //border: 1px red solid;
+  }
+
+  .container {
+    width: 100%;
+    //border: 1px green solid;
+
+  }
+
+  .not_tablet { display: none; }
+
+
+}
 
 @font-face {
   font-family: 'Lato';
@@ -32,6 +36,8 @@ body {
   background-color: #F8F9FB;
   font-family: 'Roboto', sans-serif;
   color: #032f3e;
+  box-sizing: border-box;
+
 }
 .container-fluid {
   max-width: 1700px;
@@ -44,6 +50,10 @@ body {
   //border: 1px green solid;
 
 }
+.not_pc {
+  display: none;
+}
+
 h1 {
   font-size: 40px;
 }
@@ -160,6 +170,28 @@ a:active, a:focus {
 
   color: #eee;
 }
+
+//@media screen and (max-width:768px){
+//  .container-fluid {
+//    max-width: 1700px;
+//    padding: 0;
+//    //border: 1px red solid;
+//  }
+//
+//  .container {
+//    max-width: 1200px;
+//    //border: 1px green solid;
+//
+//  }
+//
+//}
+
+
+
+
+
+
+
 
     
         

@@ -1,100 +1,83 @@
-/* Hierarchie de dossier Smacss
-    1- Base (p, body, h1, h2....)
-    2- Layout (.l-header, .l-sidebar, .l-footer) Mettre essentiellement les indication de positionnement du bloc
-    3- Module (.widget, .list, .btn, .bloc, .title ou encore la personnalisation (style) des groupes de contenus ds la section ex: section header 
-    4- State (.is-active, is-visible, is-hidden ...) les class concernant les actions avec le JS
-    5- Theme (.dark, .light,....) nécessaire surtout lors de thème personnalisable avec plusieurs couleurs
-  
-  Hierargiser un bloc de style
-    .laClass {
-        Box
-        Border
-        Background  
-        text
-        other
-    }*/
+/*  Section Services  */
 
+  .services {
 
-.services {
+    text-align: center;
 
+    p {
+      margin-top: 31px;
+      font-family: 'Lato Light', sans-serif;
+      font-size: 16px;
+      line-height: 1.68;
+      text-transform: uppercase;
+    }
 
-  text-align: center;
+    .services-btn-bg {
+      position: absolute;
+      top: -35px;
+      left: 0;
 
+    }
 
-      p {
-            margin-top: 31px;
-            font-family: 'Lato Light', sans-serif;
-            font-size: 16px;
-            line-height: 1.68;
-            text-transform: uppercase;
-          }
+    .services-chevron {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 186px;
 
-          .services-btn-bg {
-            position: absolute;
-            top: -35px;
-            left:0;
+      color: #AB987A;
+    }
 
-          }
+    .services-box {
+      margin-top: 139px;
+      margin-bottom: 181px;
 
-          .services-chevron {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 186px;
+      .services-box-img {
+        position: relative;
+        width: 100%;
 
-            color: #AB987A;
-          }
-
-      .services-box {
-        margin-top: 139px;
-        margin-bottom: 181px;
-
-        .services-box-img {
+        .service-icon-bg {
           position: relative;
+          margin-bottom: 22px;
           width: 100%;
-
-
-              .service-icon-bg {
-                position: relative;
-                margin-bottom: 22px;
-                width: 100%;
-              }
-
-              .service-icon {
-                position: absolute;
-                top: 30px;
-                left: 40px;
-              }
-              .service-icon-other {
-                position: absolute;
-                top: 27px;
-                left: 32px;
-              }
-
         }
 
-          p {
-            font-family: 'Roboto Bold', sans-serif;
-            font-size: 1em;
-            line-height: 1.41;
-            font-weight: bold;
-            text-align: center;
-            text-align: -webkit-center;
-          }
+        .service-icon {
+          position: absolute;
+          top: 40px;
+          left: 50px;
+        }
+        .service-icon-other {
+          position: absolute;
+          top: 27px;
+          left: 32px;
+        }
 
-          p:after {
-            content: '';
-            display: block;
-            width: 30px;
-            height: 2px;
-            background-color: #AB987A;
-            margin-top: 27px;
-            //margin-left: 49%;
-
-          }
       }
 
-}
+      p {
+        font-family: 'Roboto Bold', sans-serif;
+        font-size: 1em;
+        line-height: 1.41;
+        font-weight: bold;
+        text-align: center;
+        text-align: -webkit-center;
+      }
+
+      p:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #AB987A;
+        margin-top: 27px;
+        //margin-left: 49%;
+
+      }
+    }
+
+  }
+
 
         
       

@@ -1,0 +1,160 @@
+
+/*  Responsive Tablette */
+
+@media screen and (max-width:991px){
+
+
+  .container-fluid {
+    width: 100%;
+    padding: 0;
+    //border: 1px red solid;
+  }
+
+  .container {
+    width: 100%;
+    //border: 1px green solid;
+
+  }
+
+  .not_tablet { display: none; }
+
+
+
+  .header {
+
+    .not_tablet { display: none; }
+
+
+  }
+
+  .services {
+
+    .services-box {
+      display:flex;
+      flex-direction: row;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+
+      .services-box-img {
+        position: relative;
+        text-align: -webkit-center;
+
+        .service-icon-bg {
+          width: 100px;
+          text-align: center;
+          margin-bottom: 20px;
+
+        }
+        .service-icon {
+          position: absolute;
+          //top: 32px;
+          //width: 100px;
+
+          .ico {
+            height:35px;
+          }
+          .paper {
+            height:35px;
+          }
+          .paper {
+            height:35px;
+          }
+        }
+        .service-icon-other {
+          position: absolute;
+          top: 16px;
+          left: 32px;
+          width: 32px;
+
+        }
+      }
+
+    }
+  }
+  .project {
+
+    .project-button-action {
+      text-align: center;
+    }
+
+    .projects-content {
+
+      .project-slide {
+
+        .projects-playing {
+
+
+
+        }
+
+      }
+
+    }
+
+
+
+
+  }
+
+  .projects {
+    .project-footer {
+
+      .project-footer-box-middle {
+        margin-top: 30px;
+
+          .project-footer-middle-left {
+            border-right: 2px #eee solid;
+          }
+          .project-footer-middle-right {
+            border-left: 2px #eee solid;
+          }
+      }
+
+    }
+
+  }
+
+
+  .skype {
+      .skype-content {
+        margin-bottom: -76px;
+      }
+  }
+
+
+
+  .map {
+
+    .map-modal {
+      top: 155px;
+      right: 37px;
+      width: 327px;
+      height: 88px;
+
+    }
+  }
+
+
+  .footer {
+    .footer-box {
+       .footer-about {
+         margin-bottom: 50px;
+       }
+
+    }
+  }
+
+
+  .copyright {
+    .copyright-text {
+      font-size: 10px;
+    }
+  }
+
+
+
+
+
+
+}
