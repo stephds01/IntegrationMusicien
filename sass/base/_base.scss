@@ -1,23 +1,5 @@
 /*  Base  */
 
-@media (min-width: 7668px) and (max-width: 991px) {
-  .container-fluid {
-    width: 100%;
-    padding: 0;
-    //border: 1px red solid;
-  }
-
-  .container {
-    width: 100%;
-    //border: 1px green solid;
-
-  }
-
-  .not_tablet { display: none; }
-
-
-}
-
 @font-face {
   font-family: 'Lato';
   src: url('/font/Lato-Bold.ttf');
@@ -25,7 +7,6 @@
   src: url('/font/Lato-LightItalic.ttf');
   src: url('/font/Lato-Regular.ttf');
 }
-
 
 html, body {
   margin: 0;
@@ -43,6 +24,7 @@ body {
   max-width: 1700px;
   padding: 0;
   //border: 1px red solid;
+
 }
 
 .container {

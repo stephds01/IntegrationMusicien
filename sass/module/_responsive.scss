@@ -1,11 +1,189 @@
+/*  Responsive Mobile */
+@media screen and (max-width:768px) {
+
+  .header .header-contact {
+    display: none;
+  }
+
+  .l-slide {
+    display: none;
+  }
+
+  .services .services-box .services-box-img {
+    position: relative;
+    width: 67px;
+    height: 68px;
+  }
+
+  .services .services-box .services-box-img .service-icon-bg {
+    position: absolute;
+    top: 0;
+    width: 67px;
+    left: 0;
+  }
+
+  .services .services-box .services-box-img .service-icon {
+    top: 17px;
+    left: 21px;
+  }
+
+  .services .services-box .services-box-img {
+    position: relative;
+  }
+
+  .services .services-box  .services-box3 {
+    display: inline-flex;
+    flex-direction: row;
+  }
+
+  .services .services-box .services-box-img .service-icon-bg1 .service-icon .ico{
+    height: 35px;
+  }
+
+  .services .services-box p:after {
+    content: '';
+    display: none;
+    width: 0;
+    height: 0;
+    background-color: #f6f8fa;
+    margin-top: 15px;
+  }
+
+  .services .services-box p {
+    text-align: left  ;
+    text-align: -webkit-left;
+    width: 100%;
+  }
+
+
+  .projects .project-footer .project-footer-left, .projects .project-footer .project-footer-middle, .projects .project-footer .project-footer-right {
+    //position: relative;
+    //background-color: #9e9e9e;
+    margin-bottom: 15px;
+  }
+
+
+  .project-footer-box-middle .col-xs-12 {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .skype .skype-content {
+    text-align: center;
+  }
+
+  .skype .btn-action {
+    width: 100%;
+  }
+
+  .testimonials .testimonials-content .testimonials-btn button {
+    display:none
+  }
+
+  .testimonials .testimonials-content .testimonials-btn1 button {
+      width: 62px;
+      height: 70px;
+
+      //margin-top: 155%;
+      color: #aa977a;
+      border: 3px #aa977a solid;
+      background-color: transparent;
+    }
+
+
+  
+  
+  
+  
+  
+
+
+  //header {
+  //  .header-box {
+  //
+  //    .header-contact {
+  //      display: none !important;
+  //    }
+  //  }
+  //}
+
+  //.container-fluid {
+  //  width: 100%;
+  //  padding: 0;
+  //  //border: 1px red solid;
+  //}
+
+  //.container {
+  //  width: 100%;
+  //  //border: 1px green solid;
+  //
+  }
+  //.services .services-box .services-box-img .service-icon-bg {
+  //  width: 0px;
+  //}
+
+  .services-box {
+    //margin-top: 139px;
+    //margin-bottom: 181px;
+
+    .services-box-img {
+     // position: relative;
+      width: 20%;
+
+      .service-icon-bg {
+      //  position: relative;
+      //  margin-bottom: 22px;
+        width: 0;
+      }
+      //
+      //.service-icon {
+      //  position: absolute;
+      //  top: 40px;
+      //  left: 50px;
+      //}
+      //.service-icon-other {
+      //  position: absolute;
+      //  top: 27px;
+      //  left: 32px;
+      //}
+
+    }
+
+    p {
+      //font-family: 'Roboto Bold', sans-serif;
+      //font-size: 1em;
+      //line-height: 1.41;
+      //font-weight: bold;
+      //text-align: center;
+      //text-align: -webkit-center;
+      width: 30%;
+    }
+
+    //p:after {
+    //  content: '';
+    //  display: block;
+    //  width: 30px;
+    //  height: 2px;
+    //  background-color: #AB987A;
+    //  margin-top: 27px;
+    //  //margin-left: 49%;
+    //
+    //}
+  }
+
+
+//}
+
+
 
 /*  Responsive Tablette */
-
-@media screen and (max-width:991px) {
+@media screen and (min-width:768px) and (max-width:991px) {
 
   .container-fluid {
     width: 100%;
     padding: 0;
+
     //border: 1px red solid;
   }
 
@@ -51,8 +229,8 @@
     }
 
     .navbar-header {
-      //background-color: #f8f9fb;
-      border-color: #f8f9fb;;
+      background-color: #f8f9fb;
+      border-color: #f8f9fb;
     }
   }
 
@@ -112,18 +290,9 @@
       .project-slide {
 
         .projects-playing {
-
-
-
         }
-
       }
-
     }
-
-
-
-
   }
 
   .projects {
@@ -139,9 +308,7 @@
             border-left: 2px #eee solid;
           }
       }
-
     }
-
   }
 
 
@@ -160,7 +327,6 @@
       right: 37px;
       width: 327px;
       height: 88px;
-
     }
   }
 
@@ -170,7 +336,6 @@
        .footer-about {
          margin-bottom: 50px;
        }
-
     }
   }
 
@@ -181,9 +346,8 @@
     }
   }
 
-
-
-
-
-
 }
+
+
+
+

@@ -1,37 +1,29 @@
+/**
+ * Created by Utilisateur on 17/06/2016.
+ */
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var browserSync = require('browser-sync');
 var autoprefixer = require('gulp-autoprefixer');
+var browserSync = require('browser-sync');
 
 
-
-
-
-//Tache SASS
+//Tache Saas
 gulp.task('sass', function() {
-    return gulp.src('app/scss/**/*.scss')
+
+    return gulp.src('style.scss')
         .pipe(sass())
-        .pipe(gulp.dest('app/css'))
+        .pipe(gulp.dest('dist'))
         .pipe(browserSync.reload({
             stream: true
         }))
+
 });
 
-
-//Tache crée le server BrowserSync 
-gulp.task('browserSync', function() {
-    browserSync({
-        server: {
-            baseDir: '/'
-        }
-    })
-});
-
-//Tache qui autoprefixe le css
-gulp.task('default', function () {
-    return gulp.src('style.css')
+//Tache Auto prefixer
+gulp.task('autoprefixer', function () {
+    return gulp.src('dist/style.css')
         .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            browsers: ['last 2 versions', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'],
             cascade: false
         }))
         .pipe(gulp.dest('dist'));
@@ -39,12 +31,27 @@ gulp.task('default', function () {
 
 
 
-
-//J'automatise dès le rafraichissement dès la modification d'un fichier 
-gulp.task('watch',['browserSync', 'sass'], function() {
-    gulp.watch('app/scss/**/*.scss', ['sass']);
-
-    gulp.watch('app/*.html', browserSync.reload);
-    gulp.watch('app/js/**/*.js', browserSync.reload);
+//Tache crée le server BrowserSync
+gulp.task('browserSync', function() {
+    browserSync({
+        server: {
+            baseDir: ''
+        }
+    })
 });
 
+
+
+
+//J'automatise dès le rafraichissement dès la modification d'un fichier
+gulp.task('watch',['browserSync', 'sass', 'autoprefixer'], function() {
+
+    gulp.watch('sass/**/*.scss', ['sass']).on('change', function(event) {
+        console.log('le fichier ' + event.path + ' a ete modifie');
+    });
+    gulp.watch('dist/style.css', ['autoprefixer']).on('change', function(event) {
+        console.log('le fichier ' + event.path + ' a ete autoprefixer');
+    });
+    gulp.watch('*.html', browserSync.reload);
+    gulp.watch('js/**/*.js', browserSync.reload);
+});
