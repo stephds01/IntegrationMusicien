@@ -329,8 +329,8 @@ a:active, a:focus {
         width: 100%; }
       .services .services-box .services-box-img .service-icon {
         position: absolute;
-        top: 40px;
-        left: 50px; }
+        top: 31px;
+        left: 54px; }
       .services .services-box .services-box-img .service-icon-other {
         position: absolute;
         top: 27px;
@@ -632,6 +632,9 @@ a:active, a:focus {
   border: 3px #aa977a solid;
   background-color: transparent; }
 
+.testimonials .testimonials-content .testimonials-btn1 {
+  display: none; }
+
 .testimonials .testimonials-content .testimonials-avatar {
   text-align: center; }
 
@@ -773,10 +776,35 @@ a:active, a:focus {
 
 /*  Responsive Mobile */
 @media screen and (max-width: 768px) {
+  h2 {
+    margin-top: 60px; }
   .header .header-contact {
     display: none; }
+  .header .header-icon {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .header .header-icon p {
+    margin: 0 9px 0 5px; }
   .l-slide {
     display: none; }
+  .lessons h3 {
+    margin-top: 60px;
+    font-size: 41px; }
+  .lessons-text p {
+    padding-left: 15px; }
+  .lessons .lessons-pipe:after {
+    margin: 21px; }
+  .projects {
+    margin-top: 50px; }
+  .projects .projects-header {
+    margin-bottom: 50px; }
+  .projects .project-footer {
+    margin-top: 0px; }
+  .btn-action {
+    width: 230px; }
+  .projects .project-pagination {
+    margin-bottom: 50px; }
   .services .services-box .services-box-img {
     position: relative;
     width: 67px;
@@ -814,14 +842,19 @@ a:active, a:focus {
     width: 100%; }
   .projects .project-footer .project-footer-left, .projects .project-footer .project-footer-middle, .projects .project-footer .project-footer-right {
     margin-bottom: 15px; }
-  .project-footer-box-middle .col-xs-12 {
-    width: 100%;
+  .col-xs-12 .project-footer-box-middle {
     padding-left: 0;
     padding-right: 0; }
   .skype .skype-content {
     text-align: center; }
+  .skype .skype-content .skype-text {
+    margin-left: 0;
+    font-size: 24px; }
   .skype .btn-action {
     width: 100%; }
+  .skype .col-md-6, .skype .col-md-4 {
+    margin-top: 0;
+    margin-bottom: 50px; }
   .testimonials .testimonials-content .testimonials-btn button {
     display: none; }
   .testimonials .testimonials-content .testimonials-btn1 button {
@@ -829,7 +862,34 @@ a:active, a:focus {
     height: 70px;
     color: #aa977a;
     border: 3px #aa977a solid;
-    background-color: transparent; } }
+    background-color: transparent; }
+  .latestNews-col-right {
+    display: none; }
+  .latestNews .latestNews-btn-action button {
+    width: 228px;
+    margin-bottom: 50px; }
+  .latestNews-button {
+    display: none; }
+  .map .map-modal {
+    top: 163px;
+    right: 48px;
+    width: 273px;
+    height: 78px; }
+  .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse; }
+  .copyright .copyright-text {
+    font-size: 12px; }
+  .copyright div {
+    margin-top: 0;
+    margin-bottom: 0; } }
 
 .services-box .services-box-img {
   width: 20%; }
@@ -896,13 +956,20 @@ a:active, a:focus {
   .project .project-button-action {
     text-align: center; }
   .projects .project-footer .project-footer-box-middle {
+    padding-left: 0;
+    padding-right: 0; }
+  .projects .project-footer .project-footer-box-middle {
     margin-top: 30px; }
     .projects .project-footer .project-footer-box-middle .project-footer-middle-left {
       border-right: 2px #eee solid; }
     .projects .project-footer .project-footer-box-middle .project-footer-middle-right {
       border-left: 2px #eee solid; }
+  .skype .skype-center {
+    text-align: center; }
   .skype .skype-content {
     margin-bottom: -76px; }
+  .testimonials {
+    margin-bottom: 50px; }
   .map .map-modal {
     top: 155px;
     right: 37px;
@@ -912,3 +979,10 @@ a:active, a:focus {
     margin-bottom: 50px; }
   .copyright .copyright-text {
     font-size: 10px; } }
+
+/*  Responsive TV */
+@media screen and (min-width: 1220px) {
+  .services-box-img .service-icon {
+    position: absolute;
+    top: 31px;
+    left: 54px; } }
