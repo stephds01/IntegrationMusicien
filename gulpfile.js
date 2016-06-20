@@ -35,7 +35,7 @@ gulp.task('autoprefixer', function () {
 gulp.task('browserSync', function() {
     browserSync({
         server: {
-            baseDir: ''
+            baseDir: './'
         }
     })
 });

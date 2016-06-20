@@ -42,7 +42,17 @@
 
     p {
       margin: 0 5px;
+      color: #032f3e;
+    }
 
+    a {
+      color: #032f3e;
+
+    }
+
+    a:hover {
+      color: #032f3e;
+      font-weight: bold;
     }
 
   }
@@ -67,14 +77,22 @@
 
     color: #032f3e;
 
-      p:first-child {
+      a:first-child {
         padding-left: 48px;
       }
 
-      p {
+      a {
         margin: 0 32px 0 5px;
+        color: #032f3e;
+
       }
+     a:hover {
+      color: #aa977a;
+    }
+
   }
+
+
 }
 
 .menu {

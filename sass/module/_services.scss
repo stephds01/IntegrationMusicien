@@ -44,8 +44,12 @@
 
         .service-icon {
           position: absolute;
-          top: 31px;
-          left: 54px;
+          top: 39px;
+          left: 59px;
+            .ico {
+              height: 40px;
+
+            }
         }
         .service-icon-other {
           position: absolute;
@@ -56,6 +60,7 @@
       }
 
       p {
+        width: 100%;
         font-family: 'Roboto Bold', sans-serif;
         font-size: 1em;
         line-height: 1.41;

@@ -27,7 +27,9 @@
 
       .article1 {
         position: relative;
-        background-color: #9d9d9e;
+        background-image: url("../img/articles/musician.jpg");
+        -webkit-background-size: cover;
+        background-size: cover;
       }
 
       .action-comment {
@@ -158,7 +160,27 @@
         top:0;
         left: 0;
         background-color: #9d9d9e;
-      }
+    }
+
+    .latestNews-img1 {
+      background-image: url('../img/articles/violon.jpg');
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+
+
+    .latestNews-img2 {
+      background-image: url('../img/articles/guitar-child.jpg');
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+
+    .latestNews-img3 {
+      background-image: url('../img/articles/group-music.jpg');
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+
   }
 
   .latestNews-btn-action {
