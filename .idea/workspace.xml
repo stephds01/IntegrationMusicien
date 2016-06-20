@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb9d774-75f1-462f-b945-a3543009669c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/articles/guitarist.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/articles/lessons.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/articles/music.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/articles/musician.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/articles/rock.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/style.css" afterPath="$PROJECT_DIR$/dist/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/base/_base.scss" afterPath="$PROJECT_DIR$/sass/base/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/layout/_layout.scss" afterPath="$PROJECT_DIR$/sass/layout/_layout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/module/_copyright.scss" afterPath="$PROJECT_DIR$/sass/module/_copyright.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/module/_header.scss" afterPath="$PROJECT_DIR$/sass/module/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/module/_latestNews.scss" afterPath="$PROJECT_DIR$/sass/module/_latestNews.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/module/_projects.scss" afterPath="$PROJECT_DIR$/sass/module/_projects.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/module/_responsive.scss" afterPath="$PROJECT_DIR$/sass/module/_responsive.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/module/_services.scss" afterPath="$PROJECT_DIR$/sass/module/_services.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/module/_slide.scss" afterPath="$PROJECT_DIR$/sass/module/_slide.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/module/_testimonials.scss" afterPath="$PROJECT_DIR$/sass/module/_testimonials.scss" />
     </list>
     <ignored path="integrationMusicien.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -519,16 +501,16 @@
       <workItem from="1465887752141" duration="660000" />
       <workItem from="1465889182261" duration="24564000" />
       <workItem from="1465986083241" duration="50030000" />
-      <workItem from="1466101756126" duration="75656000" />
+      <workItem from="1466101756126" duration="75766000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227131000" />
+    <option name="totallyTimeSpent" value="227241000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10063224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -537,7 +519,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3249453" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17226435" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17226435" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
